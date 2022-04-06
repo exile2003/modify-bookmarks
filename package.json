@@ -1,0 +1,20 @@
+{
+  "name": "modify-bookmarks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bookmarks-dates-dev.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "jsdom": "^19.0.0",
+    "node-gyp": "^9.0.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.3.2",
+    "parcel-bundler": "^1.12.5"
+  }
+}
