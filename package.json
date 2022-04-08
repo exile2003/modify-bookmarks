@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "file-saver": "^2.0.5",
+    "fileapi": "^2.2.0",
     "fs": "0.0.1-security",
     "jsdom": "^19.0.0",
     "node-gyp": "^9.0.0"
