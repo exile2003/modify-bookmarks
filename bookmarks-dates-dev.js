@@ -1,76 +1,73 @@
-
-//const { JSDOM } = require('jsdom');
-
-//const fs = require('fs');
-
+import FileSaver from 'file-saver'
 
 let output = document.getElementById("output");
 output.innerText = "Выберите файл"
 
-let file, result, dom;
+// When a bookmark file is choosen, the function 'getFile' is started.
+document.getElementById("input").onchange = getFile;
 
-//let file = fs.readFileSync('bookmarks_1_27_22.html');
+// Function 'addDate' adds a div element with the date of bookmark creation after the inputElement.
+// Attribute 'ADD_DATE' has a Unix timestamp in seconds.
+// Tag "H3" has a title of folder.
+function addDate(inputElement) {
+    let element = inputElement;
+    let attributeValue, div, date;
 
-document.getElementById("initial").onchange = getFile;
+    if (element.hasAttribute('ADD_DATE') && element.tagName !== "H3" && element.textContent !== "") {
 
- async function getFile(e) {
-    file = await e.target.files[0];
-    let reader = new FileReader();
-    reader.onload = function(e) {
-        output.innerHTML = e.target.result
-        dom = e.target.result;
+        attributeValue = element.getAttribute('ADD_DATE');
+        date = convertUnixTime(attributeValue);
+
+        div = window.document.createElement('div');
+        div.textContent = "   " + date;
+        div.style.display = "inline";
+
+        element.insertAdjacentElement('afterEnd', div);
     }
-        reader.readAsText(file);
-    //result = await e.target.result;
-    //let file2 = fs.readFileSync(file);
-    //output.innerHTML = file2;
-   // console.log(file, result)
-
-    //const dom = new JSDOM(file);
-
-    function tagCrawling(inputElement) {
-        let element = inputElement;
-
-        if (element.hasAttribute('ADD_DATE')) {
-
-            var attributeValue = element.getAttribute('ADD_DATE');
-            var div = document.createElement('div');
-            var date = convertUnixTime(attributeValue);
-
-            if (element.tagName == "H3") {
-                element.style.whiteSpace = "pre-wrap";
-                var currText = element.textContent;//div.textContent = date;
-                element.innerHTML = currText + "   -  <span style='font-size: 16px; font-weight: normal; display:inline'>" + date + "</span>";
-            } else div.textContent = "   " + date;
-
-            div.style.display = "inline";
-            div.style.whiteSpace = "pre-wrap";
-            element.insertAdjacentElement('afterEnd', div);
-
-        }
-
-        if (element.hasChildNodes()) {
-            let childNodes = element.children;
-            for (var i = 0; i < childNodes.length; i++) {
-                tagCrawling(childNodes[i]);
-            }
-            return;
-        } else return;
-
-    }
-
-
-    function convertUnixTime(date) {
-        var d = new Date();
-        d.setTime(date * 1000);
-        var dtt = (d.toString()).slice(0, 25);
-        return dtt;
-    }
-
-    tagCrawling(document.getElementsByTagName('body')[0]);
-
-    var header = "<!doctype html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'><meta http-equiv='X-UA-Compatible' content='ie=edge'>        <title>Document</title>        </head>"
-
-    fs.writeFileSync("bookmarks_1_27_22-result.html", header + document.body.outerHTML + "</html>");
-
 }
+
+// Function 'elementIteration' iterates through the elements and checks if there are nested elements and apply to each
+// element function 'addDate'
+function elementIteration(inputElement) {
+    let element = inputElement;
+    addDate(element);
+
+    if (element.hasChildNodes()) {
+        let childNodes = element.children;
+        for (let i = 0; i < childNodes.length; i++) {
+            elementIteration(childNodes[i]);
+        }
+    }
+}
+
+// Function 'convertUnixTime' takes a Unix timestamp in seconds as parameter value and returns a date in format DAY MMM DD YYYY
+// HH:MM:SS
+function convertUnixTime(date) {
+    let dateInstance = new Date();
+    dateInstance.setTime(date*1000);
+    let calendarDate = (dateInstance.toString()).slice(0,25);
+    return calendarDate;
+}
+
+// Function 'getFile' parses the input bookmark file, processes it with the function 'elementIteration' and writes with
+// method 'saveAs' of 'FileSaver' package
+function getFile(e) {
+    let domTree;
+    let inputFile = e.target.files[0];
+    let reader = new FileReader();
+    let fileContent;
+    let outputFile;
+    reader.onload = function(e) {
+        fileContent = e.target.result;
+        domTree = new DOMParser().parseFromString(fileContent, "text/html")
+        elementIteration(domTree.getElementsByTagName('body')[0]);
+        outputFile = (domTree.getElementsByTagName('body')[0]).outerHTML
+
+        let fileForSave = new File([outputFile], "bookmark-result.html", {type: "text/plain;charset=utf-8"});
+        FileSaver.saveAs(fileForSave)
+
+    }
+    reader.readAsText(inputFile);
+}
+
+
