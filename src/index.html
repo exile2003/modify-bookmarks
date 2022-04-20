@@ -1,28 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Добавление дат в bookmarks</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--<link rel="stylesheet" type="text/css" href="style.css" >-->
+        <title>Добавление дат в bookmarks</title>
+    </head>
+    <body>
 
+        <!--<script src="https://unpkg.com/jsdom@19.0.0/lib/api.js"></script>-->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-</head>
-<body>
+        <h1>Добавление дат в bookmarks</h1>
+        <br>
+        <div class="text-instruction">Для добавления дат в файл закладок на браузере, экспортируйте файл и
+            сохраните на диске (например для браузера chrome выберите три точки в правом верхнем углу, bookmarks,
+            bookmark
+            manager. Три точки в правом верхнем углу на сайте "Bookmarks", Export bookmarks).
+            Файл будет иметь название типа "bookmarks_X_XX_XX.html" (X - цифры). Выберите сохраненный файл. В папке
+            Downloads на вашем компьютере появится файл "bookmarks-result.html" с датами.</div>
+        <br>
+        <input type="file" name="" id="input">
+        <br><br>
+        <div id="output"></div>
 
-    <!--<script src="https://unpkg.com/jsdom@19.0.0/lib/api.js"></script>-->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <!--<script type="module" src="./FileSaver.js"></script>-->
+        <script type="module" src="./index.js"></script>
 
-    <h2>Добавление дат в bookmarks</h2>
-    <br>
-    <div id="text">Для добавления дат в файл закладок на браузере экспортируйте файл и сохраните на диске. Файл будет
-        иметь название типа "bookmarks_X_XX_XX.html" (X - цифры). Выберите сохраненный файл. В папке Downloads на вашем компьютере появится
-        файл "bookmarks-result.html" с датами.</div>
-    <br>
-    <input type="file" name="" id="input">
-    <br><br>
-    <div id="output"></div>
-
-    <!--<script type="module" src="./FileSaver.js"></script>-->
-    <script type="module" src="../dist/main.js"></script>
-
-</body>
-</html>
+    </body>
+    </html>
