@@ -1,9 +1,6 @@
     import FileSaver from 'file-saver'
     import './style.css'
 
-    let output = document.getElementById("output");
-    output.innerText = "Выберите файл"
-
     // When a bookmark file is chosen, the function 'getFile' is started.
     document.getElementById("input").onchange = getFile;
 
