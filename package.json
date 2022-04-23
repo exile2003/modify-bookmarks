@@ -4,7 +4,7 @@
   "description": "",
   "main": "bookmarks-dates-dev.js",
   "scripts": {
-    "build": "webpack --mode production && cd src && copy \"index.html\" \"../dist/index.html\"",
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
     "parcel": "^2.3.2",
     "parcel-bundler": "^1.12.5",
     "style-loader": "^3.3.1",

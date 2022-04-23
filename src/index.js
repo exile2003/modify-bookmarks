@@ -4,9 +4,9 @@
     // When a bookmark file is chosen, the function 'getFile' is started.
     document.getElementById("input").onchange = getFile;
 
-    // Function 'addDate' adds a div element with the date of bookmark creation after the inputElement.
+    // Function 'addDate' adds a div element with the bookmark creation date after the inputElement.
     // Attribute 'ADD_DATE' has a Unix timestamp in seconds.
-    // Tag "H3" has a name of folder.
+    // Tag "H3" has the name of the folder.
     function addDate(inputElement) {
         let element = inputElement;
         let attributeValue, div, date;
