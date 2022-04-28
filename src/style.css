@@ -14,3 +14,14 @@ body {
 .text-instruction {
     text-align: justify;
 }
+
+.input-group-btn {
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+    width:240px;
+    height:140px;
+    border: #000 2px solid;
+    color: #000;
+    background-color: #ededed;
+}

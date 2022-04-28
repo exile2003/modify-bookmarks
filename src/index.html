@@ -15,19 +15,20 @@
         <br>
         <div class="text-instruction">Для добавления дат в файл закладок на браузере, экспортируйте файл закладок и сохраните на диске (например для браузера chrome выберите настройки - три точки в правом верхнем углу, bookmarks, bookmark manager. Три точки в правом верхнем углу на сайте "Bookmarks", Export bookmarks). Файл будет иметь название типа "bookmarks_XX.XX.XXXX.html" (X - цифры). Далее на этом сайте выберите сохраненный файл закладок. В папке Downloads на вашем компьютере появится файл "bookmarks-result.html" с датами.</div>
         <br>
-        <!--<button style="display:block;width:120px; height:30px;"-->
-                <!--onclick="document.getElementById('input').click()">Введите файл-->
-        <!--</button>-->
-
-        <!--<input type='file' id="input" style="display:none">-->
+        <button style="display:block; width:240px; height:40px;"
+                onclick="document.getElementById('input').click()">Загрузите файл
+        </button>
+        <input type='file' id="input" style="display:none;">
 
         <input type="file" class="filestyle" data-classButton="btn btn-primary" data-input="false" data-classIcon="icon-plus" data-buttonText="Your label here.">
+
         <!--<input type="file" name="" id="input" value="">-->
 
-        <div class="input-group-btn">
-            <label for="files" class="btn btn-primary">Загрузите файл</label>
-            <input id="files" type="file" class="btn btn-outline-primary"  style="visibility:hidden;"/>
-        </div>
+        <br>
+
+            <label for="files" class="input-group-btn">Загрузите файл</label>
+            <input id="files" type="file" class=""  style="visibility:hidden;"/>
+
 
         <script type="module" src="./index.js"></script>
 

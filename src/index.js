@@ -2,7 +2,7 @@
     import './style.css'
 
     // When a bookmark file is chosen, the function 'getFile' is started.
-    document.getElementById("input").onchange = getFile;
+    document.getElementById("files").onchange = getFile;
 
     // Function 'addDate' adds a div element with the bookmark creation date after the inputElement.
     // Attribute 'ADD_DATE' has a Unix timestamp in seconds.
