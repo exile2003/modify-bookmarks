@@ -16,12 +16,14 @@ body {
 }
 
 .input-group-btn {
-    vertical-align: middle;
-    text-align: center;
-    display: block;
-    width:240px;
-    height:140px;
+    /*align-items: center;     !*Центрирование по вертикали *!*/
+    /*justify-content: center; !*Центрирование по горизонтали*!*/
+    cursor: pointer;
+    margin: 10px;
+    padding: 0 10px;
+    display: inline-block;
+    /*width:auto;*/
+    height:40px;
     border: #000 2px solid;
-    color: #000;
     background-color: #ededed;
 }
