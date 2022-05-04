@@ -1,5 +1,12 @@
     import FileSaver from 'file-saver'
-    import './style.css'
+
+    //import './index-3.js'
+
+    //import './index-2.js'
+
+    // import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+    // import '../node_modules/jquery/dist/jquery.min.js'
+    // import '../js/bootstrap-filestyle.min.js'
 
     // When a bookmark file is chosen, the function 'getFile' is started.
     document.getElementById("files").onchange = getFile;

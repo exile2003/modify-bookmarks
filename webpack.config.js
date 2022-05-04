@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: './src/index.js',
     output: {
-        filename: 'index.js',
+        filename: 'index_bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
@@ -12,7 +12,11 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
-            }
+            },
+            // {
+            //     test: /\.(js)$/,
+            //     use: 'babel-loader'
+            // }
         ],
     },
     plugins: [
