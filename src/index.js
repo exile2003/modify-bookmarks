@@ -1,5 +1,6 @@
     import FileSaver from 'file-saver';
-    import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+    // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+    import '../css/bootstrap.css';
     import './style.css';
 
     // When a bookmark file is chosen, the function 'getFile' is started.
