@@ -6,8 +6,8 @@
         <!--<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">-->
         <!--<link rel="stylesheet" type="text/css" href="./style.css">-->
 
-        <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"> </script>
-        <script type="text/javascript" src="../js/bootstrap-filestyle.min.js"> </script>
+        <!--<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"> </script>-->
+        <!--<script type="text/javascript" src="../js/bootstrap-filestyle.min.js"> </script>-->
 
         <title>Добавление дат в bookmarks</title>
     </head>
@@ -17,12 +17,8 @@
         <br>
         <div class="text-instruction">Для добавления дат в файл закладок на браузере, экспортируйте файл закладок и сохраните на диске (например для браузера chrome выберите настройки - три точки в правом верхнем углу, bookmarks, bookmark manager. Три точки в правом верхнем углу на сайте "Bookmarks", Export bookmarks). Файл будет иметь название типа "bookmarks_XX.XX.XXXX.html" (X - цифры). Далее на этом сайте выберите сохраненный файл закладок. В папке Downloads на вашем компьютере появится файл "bookmarks-result.html" с датами.</div>
         <br>
-        <input type="file" class="filestyle" data-btnClass="btn btn-primary" data-input="false"
+        <input type="file" class="filestyle" id="chosen-file" data-btnClass="btn btn-primary" data-input="false"
                data-text="Загрузите файл">
-
-        <br>
-        <br>
-        <button class="btn btn-info">Нажми</button>
 
     </body>
     </html>
