@@ -2,3 +2,5 @@
 node_modules/
 utils/
 index-2.html
+!node_modules/jquery/dist/jquery.min.js
+!node_modules/bootstrap/dist/css/bootstrap.min.css
