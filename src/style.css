@@ -1,6 +1,5 @@
 html {
     height: 100%;
-    margin: 10px;
     padding: 10px;
 }
 
@@ -12,6 +11,36 @@ body {
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #ffffff),linear-gradient(70deg, #ddf4ff 30%, #dafbe1);
 }
 
+
+header{
+    margin-top: 0px;
+    text-align: right;
+}
+
+
+/*
+.i18n {
+    text-align: right;
+}
+
+.i18n > div {
+    display: inline;
+}
+*/
+
+.i18n{
+    background-color: red;
+    /*margin: auto;*/
+    /*display: inline-block;*/
+    /*width: 200px;*/
+    text-align: right;
+}
+
+/*
+.i18n > div {
+    display: inline;
+}
+*/
 
 .text-instruction {
     text-align: justify;
