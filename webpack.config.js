@@ -7,6 +7,10 @@ module.exports = {
     output: {
         filename: 'index_bundle.js',
         path: path.resolve(__dirname, 'dist'),
+
+        // the line below points to the destination of the graphics files in the build (for
+        // example: assets/img/flag_en_big.jpg). W/o this line, the destination would be like ./74642121020e5fa5a497.jpg
+
         // assetModuleFilename: 'assets/img/[name][ext]'
     },
     module: {
@@ -19,18 +23,9 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
             },
-            {
-                test: /\.(png|jpe?g|gif)$/i,
-                // use: [
-                //     {
-                //         loader: 'file-loader',
-                //     },
-                // ],
-               type: 'asset/resource'
-            }
             // {
-            //     test: /\.(js)$/,
-            //     use: 'babel-loader'
+            //     test: /\.(png|jpe?g|gif)$/i,
+            //     type: 'asset/resource'
             // }
         ],
     },
