@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"html {\\r\\n    height: 100%;\\r\\n    padding: 10px;\\r\\n}\\r\\n\\r\\nbody {\\r\\n\\r\\n    font-family: -apple-system,BlinkMacSystemFont,\\\"Segoe UI\\\",Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\";\\r\\n    font-size: 20px;\\r\\n    line-height: 1.5;\\r\\n    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #ffffff),linear-gradient(70deg, #ddf4ff 30%, #dafbe1);\\r\\n}\\r\\n\\r\\n/*\\r\\nheader div{\\r\\n    display: inline-block;\\r\\n    width: 100px;\\r\\n    justify-content: right;\\r\\n    text-align: right;\\r\\n}\\r\\n*/\\r\\n\\r\\n.i18n {\\r\\n    text-align: right;\\r\\n}\\r\\n\\r\\n.i18n > div {\\r\\n    display: inline;\\r\\n}\\r\\n\\r\\n\\r\\nheader{\\r\\n    margin-top: 0px;\\r\\n    text-align: right;\\r\\n}\\r\\n\\r\\n\\r\\n/*\\r\\n.i18n {\\r\\n    text-align: right;\\r\\n}\\r\\n\\r\\n.i18n > div {\\r\\n    display: inline;\\r\\n}\\r\\n*/\\r\\n\\r\\n.i18n{\\r\\n    background-color: red;\\r\\n    /*margin: auto;*/\\r\\n    /*display: inline-block;*/\\r\\n    /*width: 200px;*/\\r\\n    text-align: right;\\r\\n}\\r\\n\\r\\n/*\\r\\n.i18n > div {\\r\\n    display: inline;\\r\\n}\\r\\n*/\\r\\n\\r\\n.text-instruction {\\r\\n    text-align: justify;\\r\\n}\\r\\n\\r\\n.str675:after { content: '\\\\21D2'; }\\r\\n\\r\\n\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://modify-bookmarks/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"html {\\r\\n    height: 100%;\\r\\n    padding: 10px;\\r\\n}\\r\\n\\r\\nbody {\\r\\n\\r\\n    font-family: -apple-system,BlinkMacSystemFont,\\\"Segoe UI\\\",Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\";\\r\\n    font-size: 20px;\\r\\n    line-height: 1.5;\\r\\n    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #ffffff),linear-gradient(70deg, #ddf4ff 30%, #dafbe1);\\r\\n}\\r\\n\\r\\n/*\\r\\nheader div{\\r\\n    display: inline-block;\\r\\n    width: 100px;\\r\\n    justify-content: right;\\r\\n    text-align: right;\\r\\n}\\r\\n*/\\r\\n\\r\\nimg {\\r\\n    margin-right: 10px;\\r\\n    width: 60px;\\r\\n    height: 30px;\\r\\n}\\r\\n\\r\\n.i18n {\\r\\n    text-align: right;\\r\\n}\\r\\n\\r\\n.i18n > div {\\r\\n    display: inline;\\r\\n}\\r\\n\\r\\n\\r\\nheader{\\r\\n    margin-top: 0px;\\r\\n    text-align: right;\\r\\n}\\r\\n\\r\\n\\r\\n/*\\r\\n.i18n {\\r\\n    text-align: right;\\r\\n}\\r\\n\\r\\n.i18n > div {\\r\\n    display: inline;\\r\\n}\\r\\n*/\\r\\n\\r\\n.i18n{\\r\\n    background-color: red;\\r\\n    /*margin: auto;*/\\r\\n    /*display: inline-block;*/\\r\\n    /*width: 200px;*/\\r\\n    text-align: right;\\r\\n}\\r\\n\\r\\n/*\\r\\n.i18n > div {\\r\\n    display: inline;\\r\\n}\\r\\n*/\\r\\n\\r\\n.text-instruction {\\r\\n    text-align: justify;\\r\\n}\\r\\n\\r\\n.str675:after { content: '\\\\21D2'; }\\r\\n\\r\\n\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://modify-bookmarks/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -210,7 +210,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var file
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _node_modules_bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var _node_modules_jquery_dist_jquery_min_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/jquery/dist/jquery.min.js */ \"./node_modules/jquery/dist/jquery.min.js\");\n/* harmony import */ var _node_modules_jquery_dist_jquery_min_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_jquery_dist_jquery_min_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_bootstrap_filestyle_min_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../js/bootstrap-filestyle.min.js */ \"./js/bootstrap-filestyle.min.js\");\n/* harmony import */ var _js_bootstrap_filestyle_min_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_bootstrap_filestyle_min_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _app_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.js */ \"./src/app.js\");\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://modify-bookmarks/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _node_modules_bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var _node_modules_jquery_dist_jquery_min_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/jquery/dist/jquery.min.js */ \"./node_modules/jquery/dist/jquery.min.js\");\n/* harmony import */ var _node_modules_jquery_dist_jquery_min_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_jquery_dist_jquery_min_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_bootstrap_filestyle_min_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../js/bootstrap-filestyle.min.js */ \"./js/bootstrap-filestyle.min.js\");\n/* harmony import */ var _js_bootstrap_filestyle_min_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_bootstrap_filestyle_min_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _img_Flag_Russia_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/Flag_Russia.png */ \"./src/img/Flag_Russia.png\");\n/* harmony import */ var _img_flag_en_big_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/flag_en_big.jpg */ \"./src/img/flag_en_big.jpg\");\n/* harmony import */ var _app_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.js */ \"./src/app.js\");\n//const img, img2;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://modify-bookmarks/./src/index.js?");
 
 /***/ }),
 
@@ -388,6 +388,28 @@ eval("module.exports = \"data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/20
 "use strict";
 eval("module.exports = \"data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 8 8%27%3e%3cpath fill=%27%23198754%27 d=%27M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z%27/%3e%3c/svg%3e\";\n\n//# sourceURL=webpack://modify-bookmarks/data:image/svg+xml,%253csvg_xmlns=%2527http://www.w3.org/2000/svg%2527_viewBox=%25270_0_8_8%2527%253e%253cpath_fill=%2527%2523198754%2527_d=%2527M2.3_6.73L.6_4.53c-.4-1.04.46-1.4_1.1-.8l1.1_1.4_3.4-3.8c.6-.63_1.6-.27_1.2.7l-4_4.6c-.43.5-.8.4-1.1.1z%2527/%253e%253c/svg%253e?");
 
+/***/ }),
+
+/***/ "./src/img/Flag_Russia.png":
+/*!*********************************!*\
+  !*** ./src/img/Flag_Russia.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"81d272f83c9a9f3f367f.png\";\n\n//# sourceURL=webpack://modify-bookmarks/./src/img/Flag_Russia.png?");
+
+/***/ }),
+
+/***/ "./src/img/flag_en_big.jpg":
+/*!*********************************!*\
+  !*** ./src/img/flag_en_big.jpg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"74642121020e5fa5a497.jpg\";\n\n//# sourceURL=webpack://modify-bookmarks/./src/img/flag_en_big.jpg?");
+
 /***/ })
 
 /******/ 	});
@@ -470,6 +492,26 @@ eval("module.exports = \"data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/20
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */

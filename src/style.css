@@ -20,6 +20,12 @@ header div{
 }
 */
 
+img {
+    margin-right: 10px;
+    width: 60px;
+    height: 30px;
+}
+
 .i18n {
     text-align: right;
 }
