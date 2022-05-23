@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var file
   \***************************/
 /***/ (() => {
 
-eval("window.onload = setSize;\nwindow.onresize = setSize;\n\nfunction setSize() {\n  document.getElementsByClassName(\"container\")[0].style.height = 15 * window.innerWidth / window.outerWidth + \"mm\"; //  document.getElementsByClassName(\"container\")[0].style.margin = \"2vw\";\n}\n\n//# sourceURL=webpack://modify-bookmarks/./src/flags_size.js?");
+eval("window.onload = setSize;\nwindow.onresize = setSize;\n\nfunction setSize() {\n  document.getElementsByClassName(\"container\")[0].style.height = 10 * window.innerWidth / window.outerWidth + \"mm\"; //  document.getElementsByClassName(\"container\")[0].style.margin = \"2vw\";\n}\n\n//# sourceURL=webpack://modify-bookmarks/./src/flags_size.js?");
 
 /***/ }),
 
