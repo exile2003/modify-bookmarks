@@ -1,5 +1,4 @@
 import FileSaver from 'file-saver';
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 // When a bookmark file is chosen, the function 'getFile' is started.
 document.getElementById("chosen-file").onchange = getFile;

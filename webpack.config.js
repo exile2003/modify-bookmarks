@@ -15,18 +15,35 @@ module.exports = {
     },
     module: {
         rules: [
+
             {
                 test: /\.html$/,
                 use: 'html-loader'
             },
+
+            // {
+            //     test: /\.(png|jpe?g|gif)$/i,
+            //     use: [
+            //         {
+            //             loader: 'file-loader',
+            //         },
+            //     ],
+            // },
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
             },
-            // {
-            //     test: /\.(png|jpe?g|gif)$/i,
-            //     type: 'asset/resource'
-            // }
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                type: 'asset/resource'
+            },
+            {
+                test: /\.js$/,
+                use: 'babel-loader',
+                exclude: [
+                    /node_modules/
+                ]
+            }
         ],
     },
     plugins: [
