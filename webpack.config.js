@@ -11,7 +11,7 @@ module.exports = {
         // the line below points to the destination of the graphics files in the build (for
         // example: assets/img/flag_en_big.jpg). W/o this line, the destination would be like ./74642121020e5fa5a497.jpg
 
-        // assetModuleFilename: 'assets/img/[name][ext]'
+         //assetModuleFilename: 'assets/img/[name][ext]'
     },
     module: {
         rules: [
@@ -37,13 +37,10 @@ module.exports = {
                 test: /\.(png|jpe?g|gif)$/i,
                 type: 'asset/resource'
             },
-            {
-                test: /\.js$/,
-                use: 'babel-loader',
-                exclude: [
-                    /node_modules/
-                ]
-            }
+            // {
+            //     test: /\.js$/,
+            //     use: 'babel-loader'
+            // }
         ],
     },
     plugins: [

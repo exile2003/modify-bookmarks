@@ -4,7 +4,7 @@ import './style.css';
 // These three lines below are necessary for working library Bootstrap
 // FileStyle-2 (https://markusslima.github.io/bootstrap-filestyle/). This library is needed for customization of
 // html input element.
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+ //import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './css/bootstrap.min.css'
 import '../node_modules/jquery/dist/jquery.min.js';
 import './js/bootstrap-filestyle.min.js';
@@ -14,6 +14,8 @@ import './js/flags_size.js'
 import './js/routes.js'
 import './js/app.js'
 */
+
+let isReloadPermission;
 
 window.onload = function() {console.log("load")};
 window.onchange = function() {console.log("onchange")};
@@ -74,6 +76,7 @@ let routers = [
 ]
 
 window.addEventListener("hashchange", function() {
+    isReloadPermission = 1;
     hashChange(routers);
     //window.location.reload();
     //setSize();
@@ -85,7 +88,7 @@ window.addEventListener("hashchange", function() {
 function hashChange(someRouter){
     console.log("hashChange");
     //setSize();
-    //chooseFile();
+    //setTimeout(() => chooseFile(), 100);
     let routers2 = someRouter;
     //console.log(window.location.hash == Undefined)
     if(window.location.hash.length > 0 ){
@@ -113,8 +116,14 @@ function launch(someHtml) {
     xhr.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
             document.getElementById("output").innerHTML = xhr.responseText;
-            //setTimeout(() => window.location.reload(),0);
-        };
+            //setTimeout(() => chooseFile(), 0);
+            chooseFile();
+            if (isReloadPermission) setTimeout(() => {
+                console.log("isReloadPermission");
+                window.location.reload();
+            }, 0);
+            isReloadPermission = 0;
+        }
     };
     xhr.send();
 }
@@ -127,6 +136,8 @@ import FileSaver from 'file-saver';
 function chooseFile() {
     console.log("chooseFile");
     document.getElementById("chosen-file").onchange = getFile;
+    //setTimeout(() => window.location.reload(),100);
+
 }
 
 
