@@ -187,7 +187,7 @@ function convertUnixTime(date) {
 // Function 'getFile' parses the input bookmark file, processes it with the function 'elementIteration' and writes with
 // method 'saveAs' of 'FileSaver' package
 function getFile(e) {
-    console.log("getFile");
+    //console.log("getFile");
     let domTree;
     let inputFile = e.target.files[0];
     let reader = new FileReader();
