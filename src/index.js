@@ -4,7 +4,7 @@ import './style.css';
 // These three lines below are necessary for working library Bootstrap
 // FileStyle-2 (https://markusslima.github.io/bootstrap-filestyle/). This library is needed for customization of
 // html input element.
- //import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+ //import '../node_modules/bootstrap/dist/css/bootstrap.min.css';// this line doesn't relate to the comment above
 import './css/bootstrap.min.css'
 import '../node_modules/jquery/dist/jquery.min.js';
 import './js/bootstrap-filestyle.min.js';
@@ -118,11 +118,16 @@ function launch(someHtml) {
             document.getElementById("output").innerHTML = xhr.responseText;
             //setTimeout(() => chooseFile(), 0);
             chooseFile();
-            if (isReloadPermission) setTimeout(() => {
-                console.log("isReloadPermission");
+
+            if (isReloadPermission) {
                 window.location.reload();
-            }, 0);
-            isReloadPermission = 0;
+                console.log("isReloadPermission");
+                setTimeout(() => console.log("isReloadPermission"), 3000);
+                alert("isReloadPermission");
+                isReloadPermission = 0;
+
+            }
+
         }
     };
     xhr.send();
@@ -195,10 +200,15 @@ function getFile(e) {
     let outputFile;
     reader.onload = function(e) {
         fileContent = e.target.result;
+
+        //Parsing the content of the input file and assign result to domTree variable
         domTree = new DOMParser().parseFromString(fileContent, "text/html")
+
+        //Pass the content of tag body to function elementIteration for adding dates
         elementIteration(domTree.getElementsByTagName('body')[0]);
         outputFile = (domTree.getElementsByTagName('body')[0]).outerHTML
 
+        //Form the file and write to disk
         let fileForSave = new File([outputFile], "bookmark-result.html", {type: "text/plain;charset=utf-8"});
         FileSaver.saveAs(fileForSave)
 
