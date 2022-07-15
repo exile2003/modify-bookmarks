@@ -115,19 +115,34 @@ function launch(someHtml) {
 
     xhr.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
-            document.getElementById("output").innerHTML = xhr.responseText;
+
+           // document.getElementById("output").innerHTML = xhr.responseText;
+            let output = document.getElementById("output");
+           // let newElement = '<div>' + xhr.responseText + '</div>';
+            let newElement = new DOMParser().parseFromString(xhr.responseText, "text/html");
+
+           // let newElement2 = newElement.getElementsByTagName('body')[0].innerHTML
+
+           // console.log(xhr.responseText);
+           // console.log(newElement.getElementsByTagName('body')[0].childNodes);
+
+           // output.insertAdjacentElement('afterEnd', newElement.getElementsByTagName('body')[0]);
+
+            output.innerHTML = xhr.responseText;
+
             //setTimeout(() => chooseFile(), 0);
             chooseFile();
 
+/*
             if (isReloadPermission) {
                 window.location.reload();
-                console.log("isReloadPermission");
-                setTimeout(() => console.log("isReloadPermission"), 3000);
-                alert("isReloadPermission");
+              //  console.log("isReloadPermission");
+              //  setTimeout(() => console.log("isReloadPermission"), 3000);
+               // alert("isReloadPermission");
                 isReloadPermission = 0;
 
             }
-
+    */
         }
     };
     xhr.send();
