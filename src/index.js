@@ -128,7 +128,8 @@ function launch(someHtml) {
 
            // output.insertAdjacentElement('afterEnd', newElement.getElementsByTagName('body')[0]);
 
-            output.innerHTML = xhr.responseText;
+           // output.innerHTML = xhr.responseText;
+           output.setAttribute('src', url);
 
             //setTimeout(() => chooseFile(), 0);
             chooseFile();
