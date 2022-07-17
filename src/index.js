@@ -113,11 +113,18 @@ function launch(someHtml) {
     let xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
 
+    let output = document.getElementById("output");
+
+    output.setAttribute('src', url);
+    output.setAttribute('frameborder', '0');
+    output.setAttribute('width', '100%');
+    output.setAttribute('height', '200');
+
     xhr.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
 
            // document.getElementById("output").innerHTML = xhr.responseText;
-            let output = document.getElementById("output");
+           // let output = document.getElementById("output");
            // let newElement = '<div>' + xhr.responseText + '</div>';
             let newElement = new DOMParser().parseFromString(xhr.responseText, "text/html");
 
@@ -129,7 +136,8 @@ function launch(someHtml) {
            // output.insertAdjacentElement('afterEnd', newElement.getElementsByTagName('body')[0]);
 
            // output.innerHTML = xhr.responseText;
-           output.setAttribute('src', url);
+
+
 
             //setTimeout(() => chooseFile(), 0);
             chooseFile();
