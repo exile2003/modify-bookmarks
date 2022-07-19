@@ -95,31 +95,44 @@ function hashChange(someRouter){
 
         for (let i=0; i < routers2.length; ++i) {
             if (routers2[i].name === window.location.hash.substr(1)) {
-                launch(routers2[i].html)
+                launch(routers2[i].html, chooseFile)
             }
         }
 
     } else { console.log("else")
         for (let i=0; i < routers2.length; i++) {
             if (routers2[i].default === true) {
-                launch(routers2[i].html)
+                launch(routers2[i].html, chooseFile)
             }
         }
     }
 }
 
-function launch(someHtml) {
+function launch(someHtml, callback) {
+
+    console.log("launch")
+
     let url = 'routes/' + someHtml;
     let xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
 
     let output = document.getElementById("output");
 
-    output.setAttribute('src', url);
-    output.setAttribute('frameborder', '0');
-    output.setAttribute('width', '100%');
-    output.setAttribute('height', '200');
+    // () => {
+     output.setAttribute('src', url);
+        output.setAttribute('frameborder', '0');
+        output.setAttribute('width', '100%');
+        output.setAttribute('height', '200');
+   // }
 
+    (output.contentWindow.document.body).onload = function() {
+            alert("onload");
+            callback();
+        }
+
+    callback();
+     //output.onload = function() callback();
+/*
     xhr.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
 
@@ -142,7 +155,7 @@ function launch(someHtml) {
             //setTimeout(() => chooseFile(), 0);
             chooseFile();
 
-/*
+
             if (isReloadPermission) {
                 window.location.reload();
               //  console.log("isReloadPermission");
@@ -151,10 +164,11 @@ function launch(someHtml) {
                 isReloadPermission = 0;
 
             }
-    */
+
         }
     };
     xhr.send();
+    */
 }
 
 import FileSaver from 'file-saver';
@@ -163,8 +177,10 @@ import FileSaver from 'file-saver';
 // When a bookmark file is chosen, the function 'getFile' is started.
 //window.onload = chooseFile;
 function chooseFile() {
-    console.log("chooseFile");
-    document.getElementById("chosen-file").onchange = getFile;
+    console.log("chooseFile"); alert("chooseFile");
+    //output.contentWindow.document.getElementById("chosen-file").onchange = getFile;
+    (output.contentDocument).getElementById('chosen-file').onchange = getFile;
+    //document.getElementById("chosen-file").onchange = getFile;
     //setTimeout(() => window.location.reload(),100);
 
 }
